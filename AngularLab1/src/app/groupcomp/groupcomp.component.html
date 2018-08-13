@@ -1,0 +1,37 @@
+
+<!--  <h2> Details</h2>
+   <h2>{{group.name}} Details</h2>
+<div><span>id: </span>{{group.id}}</div>
+  <label>name:
+    <input [(ngModel)]="group.name" placeholder="name">
+  </label>
+
+<table>
+    <tbody>
+      <tr *ngFor="let gr of groups">
+        <td>{{gr.name}}</td>
+        <td>Изменение стилей </td>
+         <td> https://angular.io/guide/animations</td>
+      </tr>
+    </tbody>
+  </table>  
+-->  
+<table>
+    <tbody>
+      <tr *ngFor="let gr of grps">
+        <td>{{gr.nazvanie}}</td> 
+        <td>{{gr.shifr}}</td>
+        <td>{{gr.dataFormir}}</td>
+        <td>{{gr.kodPlana}}</td>
+        <td>{{gr.statusDate}}</td>
+		<td>
+		   <table>
+    			<tbody>
+      				<tr *ngFor="let st of gr.studentyis">
+       				 <td>{{st.nomerZachetki}}</td>
+       				 <td>{{st.familiya}}</td>
+       		</table> 		 
+		</td>
+      </tr>
+    </tbody>
+  </table>  
